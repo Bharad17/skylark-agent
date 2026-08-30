@@ -26,22 +26,3 @@ An AI agent that answers founder-level business intelligence queries by integrat
    ```bash
    streamlit run app.py
    ```
-
-## Monday.com Configuration Setup
-To use this application, you need to configure Monday.com:
-
-1. **Import the Data**:
-   - Create a new board in Monday.com for "Work Orders". Import the `Work_Order_Tracker Data.xlsx` file.
-   - Create a new board in Monday.com for "Deals". Import the `Deal funnel Data.xlsx` file.
-2. **Get Board IDs**:
-   - Open each board in Monday.com and check the URL. The URL will look like `https://your-domain.monday.com/boards/1234567890`. The number at the end is the Board ID.
-3. **Generate an API Token**:
-   - Go to your Monday.com Developer Section.
-   - Generate a Personal Access Token (PAT) with **Read** access.
-4. **Configure the App**:
-   - Launch the Streamlit app.
-   - Enter your Monday.com API Token, the Work Orders Board ID, the Deals Board ID, and a Gemini API Key in the sidebar.
-   - Click "Connect & Load Data".
-
-## Note on Testing
-If you do not have a Gemini API Key, the application supports configuration in the sidebar to pass your keys seamlessly. 
