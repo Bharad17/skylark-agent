@@ -18,7 +18,7 @@ class BIAgent:
         self.quality_reports = []
         
         # LLM
-        self.llm = ChatGoogleGenerativeAI(temperature=0, model="gemini-1.5-pro", google_api_key=self.gemini_api_key)
+        self.llm = ChatGoogleGenerativeAI(temperature=0, model="gemini-2.5-flash", google_api_key=self.gemini_api_key)
         self.agent_executor = None
 
     def fetch_and_prepare_data(self) -> str:
